@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "up_sells",
+  "info": {
+    "singularName": "up-sell",
+    "pluralName": "up-sells",
+    "displayName": "Up_Sell",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "0",
+      "required": false
+    },
+    "Product_Description": {
+      "type": "text",
+      "required": true
+    },
+    "Price": {
+      "required": true,
+      "default": 0,
+      "type": "integer"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Published",
+        "Unpublished"
+      ]
+    }
+  }
+}

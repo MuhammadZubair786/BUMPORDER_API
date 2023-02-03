@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bump_orders",
+  "info": {
+    "singularName": "bump-order",
+    "pluralName": "bump-orders",
+    "displayName": "Bump_Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Order_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Published",
+        "Un_Published"
+      ],
+      "default": "Published",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
